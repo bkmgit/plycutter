@@ -46,7 +46,7 @@ def create_sheetplex(tmesh, params):
     # from trimesh <-> numpy interaction
     with warnings.catch_warnings():
         warnings.filterwarnings(
-            "ignore", category=np.VisibleDeprecationWarning
+            "ignore", category=np.exceptions.VisibleDeprecationWarning
         )
 
         sheets = create_sheets(
